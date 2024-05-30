@@ -12,11 +12,20 @@
 
 ## Materiais Extras 
 
-| Material                  | Link                                                                                                              |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------|
-| ECS Container Insights    | [Link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)                     |
-| ECS optimized AMI         | [Link](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ecs.html)   |
-| Amazon ECR                | [Link](https://aws.amazon.com/pt/ecr/)                                                                            |
-| Amazon ECS Workshop       | [Link](https://ecsworkshop.com/)                                                                                  | 
+| Material                               | Link                                                                                                                                             |
+|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Demo App: Chip                         | [Link](https://github.com/msfidelis/chip)                                                                                                        |
+| ECS Container Insights                 | [Link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)                                                    |
+| ECS optimized AMI                      | [Link](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ecs.html)                                  |
+| Amazon ECR                             | [Link](https://aws.amazon.com/pt/ecr/)                                                                                                           |
+| Amazon ECS Workshop                    | [Link](https://ecsworkshop.com/)                                                                                                                 |
+| Amazon ECS Task Placement              | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html)                                               |
+| K6 Load Tests                          | [Link](https://grafana.com/docs/k6/latest/using-k6/http-requests/)                                                                               |
+| Cloudwatch - MetricAlarm               | [Link](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricAlarm.html)                                                    |
+| Cloudwatch Metrics Load balancer       | [Link](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html#load-balancer-metrics-alb)      |
+| Appautoscaling Target tracking scaling policies | [Link](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html)                     |
+| Appautoscaling PredefinedMetricSpecification     | [Link](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_PredefinedMetricSpecification.html)                        |
+| Appautoscaling CustomizedMetricSpecification    | [Link](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CustomizedMetricSpecification.html)                                 |
+
 
 ### VPC / Networking
