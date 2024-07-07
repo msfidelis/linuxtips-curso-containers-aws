@@ -32,4 +32,37 @@
 | Fargate Tasks Size                                | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-tasks-services.html#fargate-tasks-size)                                | 
 
 
-### VPC / Networking
+
+## Github Actions Úteis para Containers na AWS
+
+| Nome                                    | Descrição                                                      | Link                                                                                  |
+|-----------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| GolangCI                                | Um linter para Go                                              | [GolangCI](https://github.com/golangci/golangci-lint)                                 |
+| Gofmt                                   | Ação para formatar código Go                                   | [Gofmt](https://github.com/Jerome1337/gofmt-action)                                   |
+| Actions/Checkout                        | Ação para fazer checkout de um repositório                     | [Actions/Checkout](https://github.com/actions/checkout)                               |
+| Setup Terraform                         | Ação para configurar o CLI do Terraform                        | [Setup Terraform](https://github.com/hashicorp/setup-terraform)                       |
+| Terraform Docs                          | Gerar documentação para módulos Terraform                      | [Terraform Docs](https://github.com/Dirrk/terraform-docs)                             |
+| AWS Actions/Render Task Definitions     | Renderizar templates de definição de tarefa do ECS             | [AWS Actions/Render Task Definitions](https://github.com/aws-actions/amazon-ecs-render-task-definition) |
+| AWS Actions/Deploy Task Definitions     | Fazer deploy de definições de tarefa do ECS                    | [AWS Actions/Deploy Task Definitions](https://github.com/aws-actions/amazon-ecs-deploy-task-definition) |
+| AWS Actions/Configure AWS Credentials   | Configurar variáveis de ambiente de credenciais AWS            | [AWS Actions/Configure AWS Credentials](https://github.com/aws-actions/configure-aws-credentials) |
+| AWS Actions/ECR Login                   | Fazer login no Amazon ECR                                      | [AWS Actions/ECR Login](https://github.com/aws-actions/amazon-ecr-login)              |
+| AWS Actions/Get Secrets                 | Recuperar segredos do AWS Secrets Manager                      | [AWS Actions/Get Secrets](https://github.com/aws-actions/aws-secretsmanager-get-secrets) |
+| Docker Setup BuildX                     | Configurar Docker BuildX                                       | [Docker Setup BuildX](https://github.com/docker/setup-buildx-action)                 |
+| AWS Assume Role                         | Assumir um papel IAM da AWS                                    | [AWS Assume Role](https://github.com/nordcloud/aws-assume-role/)                      |
+| Phonito Docker Scan Image               | Escanear imagens Docker para vulnerabilidades                  | [Phonito Docker Scan Image](https://github.com/phonito/phonito-scanner-action)        |
+| Anchore - Grype Container Scan          | Escanear imagens de contêiner para vulnerabilidades usando Grype| [Anchore - Grype Container Scan](https://github.com/anchore/scan-action)              |
+| Snyk Security Scan                      | Escanear vulnerabilidades de segurança usando Snyk             | [Snyk Security Scan](https://github.com/snyk/actions)                                 |
+| Awesome Actions List                    | Uma lista curada de ações incríveis                            | [Awesome Actions List](https://github.com/sdras/awesome-actions)                      |
+| S3 Sync                                 | Sincronizar arquivos e diretórios com o S3                     | [S3 Sync](https://github.com/jakejarvis/s3-sync-action)                               |
+
+
+
+## VPC / Networking
+
+### Planejamento de Ranges da VPC Otimizada para Containers 
+
+![Planejamento](./extras/vpc-planejamento.png)
+
+### Planejamento de Uso e Componentes de Rede
+
+![Planejamento](./extras/vpc-uso.png)
