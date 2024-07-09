@@ -33,6 +33,9 @@
 | Fargate Tasks Size                                | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-tasks-services.html#fargate-tasks-size)                                | 
 | Amazon Elastic File System                        | [Link](https://aws.amazon.com/pt/efs/)                                                                                                            | 
 | Amazon EFS Performance                            | [Link](https://docs.aws.amazon.com/efs/latest/ug/performance.html)                                                                                | 
+| Sensitive data using Secrets Manager in ECS       | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-tutorial.html)                                       | 
+| AWS Secrets Manager vs Parameter Store            | [Link](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)                                                         | 
+
 
 
 ## Github Actions Úteis para Containers na AWS
@@ -77,3 +80,4 @@
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [v1](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1)              | Publicação inicial do modulo de ECS. Tudo que foi desenvolvido em aula até a aula de pipelines com Github Actions foi empacotado nessa versão     |
 | [v1.1.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.1.0)      | Adicionado Suporte a montagem de volumes do Amazon EFS                                                                                            |
+| [v1.2.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.2.0)      | Adicionando suporte a injeção de variáveis de ambiente vindas do Parameter Store e Secrets Manager                                                |
