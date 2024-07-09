@@ -31,7 +31,8 @@
 | Firecracker                                       | [Link](https://firecracker-microvm.github.io/)                                                                                                    | 
 | Fargate Pricing Calculator                        | [Link](https://cloudtempo.dev/fargate-pricing-calculator)                                                                                         |
 | Fargate Tasks Size                                | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-tasks-services.html#fargate-tasks-size)                                | 
-
+| Amazon Elastic File System                        | [Link](https://aws.amazon.com/pt/efs/)                                                                                                            | 
+| Amazon EFS Performance                            | [Link](https://docs.aws.amazon.com/efs/latest/ug/performance.html)                                                                                | 
 
 
 ## Github Actions Úteis para Containers na AWS
@@ -67,3 +68,12 @@
 ### Planejamento de Uso e Componentes de Rede
 
 ![Planejamento](./extras/vpc-uso.png)
+
+## ECS 
+
+### Versões do Modulo Desenvolvido em Aula
+
+| Versão / Tag |  Descrição                                                                                                                                                                                                                                 |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [v1](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1)              | Publicação inicial do modulo de ECS. Tudo que foi desenvolvido em aula até a aula de pipelines com Github Actions foi empacotado nessa versão     |
+| [v1.1.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.1.0)      | Adicionado Suporte a montagem de volumes do Amazon EFS                                                                                            |
