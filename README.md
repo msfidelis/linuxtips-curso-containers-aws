@@ -9,6 +9,7 @@
 | ECS + Fargat                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster-fargate) |
 | ECS Service Module            | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module)  |
 | ECS Demo App (Mock)           | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-app)             |
+| Mirror Pudim                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-pudim)   |
 | Health API Demo               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
 
 
@@ -34,7 +35,8 @@
 | Amazon Elastic File System                        | [Link](https://aws.amazon.com/pt/efs/)                                                                                                            | 
 | Amazon EFS Performance                            | [Link](https://docs.aws.amazon.com/efs/latest/ug/performance.html)                                                                                | 
 | Sensitive data using Secrets Manager in ECS       | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-tutorial.html)                                       | 
-| AWS Secrets Manager vs Parameter Store            | [Link](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)                                                         | 
+| AWS Secrets Manager vs Parameter Store            | [Link](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)                                                         |
+| CloudMap - Service Discovery                      | [Link](https://aws.amazon.com/pt/cloud-map/)                                                                                                      |
 
 
 
@@ -59,7 +61,6 @@
 | Snyk Security Scan                      | Escanear vulnerabilidades de segurança usando Snyk             | [Snyk Security Scan](https://github.com/snyk/actions)                                 |
 | Awesome Actions List                    | Uma lista curada de ações incríveis                            | [Awesome Actions List](https://github.com/sdras/awesome-actions)                      |
 | S3 Sync                                 | Sincronizar arquivos e diretórios com o S3                     | [S3 Sync](https://github.com/jakejarvis/s3-sync-action)                               |
-
 
 
 ## VPC / Networking
