@@ -13,6 +13,13 @@
 | Health API Demo               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
 
 
+## Aulas ao Vivo + Abertas
+
+| Recurso / Aula                | Repositório                                                                                   |
+|-------------------------------|-----------------------------------------------------------------------------------------------|
+| Live sobre ECS + Multiregion. | [Slide](https://docs.google.com/presentation/d/1AcBY7BwSOC9d9ZLM3OeacSQnieorqQEBHS_6wDGA6Ck/edit?usp=sharing) / [Live]()
+
+
 ## Materiais Extras 
 
 | Material                                          | Link                                                                                                                                              |
