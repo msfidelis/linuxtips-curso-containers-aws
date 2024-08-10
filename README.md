@@ -6,7 +6,7 @@
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-vpc)                 |
 | ECS + EC2                     | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster)         |
-| ECS + Fargat                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster-fargate) |
+| ECS + Fargate                 | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster-fargate) |
 | ECS Service Module            | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module)  |
 | ECS Demo App (Mock)           | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-app)             |
 | Mirror Pudim                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-pudim)   |
