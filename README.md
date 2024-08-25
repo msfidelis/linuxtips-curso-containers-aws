@@ -5,7 +5,6 @@
 | Recurso / Aula                | Repositório                                                                                   |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-vpc)                 |
-| Aula Otimização de Imagens    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-otimizacao-de-imagens) |
 | ECS + EC2                     | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster)         |
 | ECS + Fargate                 | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster-fargate) |
 | ECS Service Module            | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module)  |
@@ -19,7 +18,9 @@
 
 | Recurso / Aula                | Repositório                                                                                   |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
-| Live sobre ECS + Multiregion. | [Slide](https://docs.google.com/presentation/d/1AcBY7BwSOC9d9ZLM3OeacSQnieorqQEBHS_6wDGA6Ck/edit?usp=sharing) / [Live]()
+| Live sobre ECS + Multiregion. | [Slide](https://docs.google.com/presentation/d/1AcBY7BwSOC9d9ZLM3OeacSQnieorqQEBHS_6wDGA6Ck/edit?usp=sharing) / [Live](https://www.youtube.com/live/8TYCUK_Rj7c?si=j1ZUA0axpZSWLUGN)
+| Live sobre EKS + KNative. | [Slide](https://docs.google.com/presentation/d/1xdrcIRiC43UxXF4CYkPm6BK1U40fOKT4nKw0A6Ck5dw/edit?usp=sharing) / [Live](https://youtu.be/90fOQLbPPvo?si=LMjrqvGABvnmd524)
+| Aula Otimização de Imagens    | [Slide](https://docs.google.com/presentation/d/1hFEZEmsO8dMC1iEryyYjfli_HCRF8xHBszF2r_araH4/edit?usp=sharing) / [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-otimizacao-de-imagens) |
 
 
 ## Materiais Extras 
