@@ -5,12 +5,14 @@
 | Recurso / Aula                | Repositório                                                                                   |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-vpc)                 |
+| Aula Otimização de Imagens    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-otimizacao-de-imagens) |
 | ECS + EC2                     | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster)         |
 | ECS + Fargate                 | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-cluster-fargate) |
 | ECS Service Module            | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module)  |
 | ECS Demo App (Mock)           | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-app)             |
 | Mirror Pudim                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-pudim)   |
 | Health API Demo               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
+
 
 
 ## Aulas ao Vivo + Abertas
