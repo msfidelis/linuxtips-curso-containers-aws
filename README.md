@@ -47,6 +47,7 @@
 | Sensitive data using Secrets Manager in ECS       | [Link](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-tutorial.html)                                       | 
 | AWS Secrets Manager vs Parameter Store            | [Link](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)                                                         |
 | CloudMap - Service Discovery                      | [Link](https://aws.amazon.com/pt/cloud-map/)                                                                                                      |
+| Chaingaurd - Painless Vulnerability Management    | [Link](https://courses.chainguard.dev/vulnerability-management-certification)                                                                     |
 
 
 
