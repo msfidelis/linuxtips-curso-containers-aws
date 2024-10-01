@@ -52,8 +52,9 @@
 | AWS Secrets Manager vs Parameter Store            | [Link](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)                                                         |
 | CloudMap - Service Discovery                      | [Link](https://aws.amazon.com/pt/cloud-map/)                                                                                                      |
 | Chainguard - Painless Vulnerability Management    | [Link](https://courses.chainguard.dev/vulnerability-management-certification)                                                                     |
-
-
+| OpenAPI - Swagger Editor    | [Link](https://editor-next.swagger.io/)                                                                                                                                 |
+| Set up CloudWatch logging for REST APIs in API Gateway    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html?icmpid=apigateway_console_help)                   |
+| Customize HTTP API access logs                    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-logging-variables.html)                                              |
 
 ## Github Actions Úteis para Containers na AWS
 
