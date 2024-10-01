@@ -13,6 +13,7 @@
 | Health API Demo               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
 | Health API (Aula Roteamento)   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab/tree/aula-roteamento)  |
 | Health API (Aula Service Connect)   | [Link do Github]()  |
+| API Gateway + Custom Domain    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-api-gateway) |
 
 
 ## Aulas ao Vivo + Abertas
