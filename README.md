@@ -25,6 +25,8 @@
 | Aula Otimização de Imagens    | [Slide](https://docs.google.com/presentation/d/1hFEZEmsO8dMC1iEryyYjfli_HCRF8xHBszF2r_araH4/edit?usp=sharing) / [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-otimizacao-de-imagens) |
 | Aula Deep Dive de Balanceadores de Carga | [Slide](https://docs.google.com/presentation/d/1yU_ZXag0nkYUzDfWqKialvCH0Ha4suX2Mj7abW8d3Cc/edit?usp=sharing) |
 | Aula Deep Dive de Performance e Escalabilidade | [Slide](https://docs.google.com/presentation/d/1dNMh96FCYPoT2V1cCAOL2qQZpcZPwrhyLynnNU00KMs/edit?usp=sharing) |
+| Aula Deep Dive Testes de Estresse | [Slide]() / [Template de Teste](/extras/load-test/README.md) |
+
 
 
 ## Materiais Extras 
@@ -55,6 +57,7 @@
 | OpenAPI - Swagger Editor    | [Link](https://editor-next.swagger.io/)                                                                                                                                 |
 | Set up CloudWatch logging for REST APIs in API Gateway    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html?icmpid=apigateway_console_help)                   |
 | Customize HTTP API access logs                    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-logging-variables.html)                                              |
+
 
 ## Github Actions Úteis para Containers na AWS
 
