@@ -25,7 +25,9 @@
 | Aula Otimização de Imagens    | [Slide](https://docs.google.com/presentation/d/1hFEZEmsO8dMC1iEryyYjfli_HCRF8xHBszF2r_araH4/edit?usp=sharing) / [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-otimizacao-de-imagens) |
 | Aula Deep Dive de Balanceadores de Carga | [Slide](https://docs.google.com/presentation/d/1yU_ZXag0nkYUzDfWqKialvCH0Ha4suX2Mj7abW8d3Cc/edit?usp=sharing) |
 | Aula Deep Dive de Performance e Escalabilidade | [Slide](https://docs.google.com/presentation/d/1dNMh96FCYPoT2V1cCAOL2qQZpcZPwrhyLynnNU00KMs/edit?usp=sharing) |
-| Aula Deep Dive Testes de Estresse | [Slide]() / [Template de Teste](/extras/load-test/README.md) |
+| Aula Deep Dive Testes de Estresse | [Slide](https://docs.google.com/presentation/d/1GJGI409INJQe9J9AEKVwB0xkEhHUz-nICZkd5yoMmwI/edit?usp=sharing) / [Template de Teste](/extras/load-test/README.md) |
+| Aula Engenharia de Confiabilidade | [Slide](https://docs.google.com/presentation/d/1P6QfGq72a2oNFGvgXYO-s2PPBNnFVLYjQy0f4wyIcik/edit?usp=sharing) /  |
+| Aula Deep Dive de Patterns de Resiliência Parte 1 | [Slide](https://docs.google.com/presentation/d/14wmZUr4q0You42BZELxgzB9flX_yMvbQjz1xvhxcyOI/edit?usp=sharing) | 
 
 
 
