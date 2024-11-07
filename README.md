@@ -12,8 +12,11 @@
 | Mirror Pudim                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-pudim)   |
 | Health API Demo               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
 | Health API (Aula Roteamento)   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab/tree/aula-roteamento)  |
-| Health API (Aula Service Connect)   | [Link do Github]()  |
+| Health API (Aula Service Connect)   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab)  |
+| Health API (Aula CodeDeploy)  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-health-api-lab/tree/aula/codedeploy) |
 | API Gateway + Custom Domain    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-api-gateway) |
+| Projeto Final ECS             | [Link do Github](/extras/ecs-projeto-final/) |
+
 
 
 ## Aulas ao Vivo + Abertas
@@ -103,3 +106,6 @@
 | [v1](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1)              | Publicação inicial do modulo de ECS. Tudo que foi desenvolvido em aula até a aula de pipelines com Github Actions foi empacotado nessa versão     |
 | [v1.1.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.1.0)      | Adicionado Suporte a montagem de volumes do Amazon EFS                                                                                            |
 | [v1.2.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.2.0)      | Adicionando suporte a injeção de variáveis de ambiente vindas do Parameter Store e Secrets Manager                                                |
+| [v1.3.0/1.3.1](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.3.1)      | Roteamento Dinâmico e Service Discovery com Cloudmap
+| [v1.4.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.4.0)      | Adicionando Suporte ao Service Connect 
+| [v1.5.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.5.0)      | Adicionando Suporte ao Code Deploy
