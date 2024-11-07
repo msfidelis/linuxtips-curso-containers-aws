@@ -1,0 +1,422 @@
+name: CI/CD Pipeline Multiregion
+
+on:
+    push:
+        branches:
+            - main
+
+env: 
+    AWS_ACCOUNT: "181560427716"
+
+jobs:
+    ci-terraform-pre-deployment:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./pre-deployment
+
+            - name: Terraform Format Check
+              run: terraform fmt --recursive --check
+              working-directory: ./pre-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Validate
+              run: terraform validate
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+
+    ci-terraform-post-deployment:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./post-deployment
+
+            - name: Terraform Format Check
+              run: terraform fmt --recursive --check
+              working-directory: ./post-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Validate
+              run: terraform validate
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+    ci-terraform-us-east-1:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+
+            - name: Terraform Format Check
+              run: terraform fmt --recursive --check
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/us-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Validate
+              run: terraform validate
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+
+
+    ci-terraform-sa-east-1:
+        runs-on:  ubuntu-latest
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+
+            - name: Terraform Format Check
+              run: terraform fmt --recursive --check
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/sa-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+            - name: Terraform Validate
+              run: terraform validate
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+    pre-deployment-plan:
+        runs-on:  ubuntu-latest
+        needs: 
+            - ci-terraform-pre-deployment
+            - ci-terraform-post-deployment
+            - ci-terraform-us-east-1
+            - ci-terraform-sa-east-1
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./pre-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Plan
+              run: terraform plan -var-file=environment/terraform.tfvars
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+
+    pre-deployment-apply:
+        runs-on:  ubuntu-latest
+        needs: 
+            - pre-deployment-plan
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./pre-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Apply
+              run: terraform apply --auto-approve -var-file=environment/terraform.tfvars
+              working-directory: ./pre-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+    us-east-1-deployment-plan:
+        runs-on:  ubuntu-latest
+        needs: 
+            - pre-deployment-apply
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/us-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Plan
+              run: terraform plan -var-file=environment/us-east-1/terraform.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+    us-east-1-deployment-apply:
+        runs-on:  ubuntu-latest
+        needs: 
+            - us-east-1-deployment-plan
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/us-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Apply
+              run: terraform apply --auto-approve -var-file=environment/us-east-1/terraform.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+
+    sa-east-1-deployment-plan:
+        runs-on:  ubuntu-latest
+        needs: 
+            - us-east-1-deployment-apply
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/sa-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+            - name: Terraform Plan
+              run: terraform plan -var-file=environment/sa-east-1/terraform.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+    sa-east-1-deployment-apply:
+        runs-on:  ubuntu-latest
+        needs: 
+            - sa-east-1-deployment-plan
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/sa-east-1/backend.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+            - name: Terraform Apply
+              run: terraform apply --auto-approve -var-file=environment/sa-east-1/terraform.tfvars
+              working-directory: ./deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "sa-east-1"
+
+    post-deployment-plan:
+        runs-on:  ubuntu-latest
+        needs: 
+            - sa-east-1-deployment-apply
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./post-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Plan
+              run: terraform plan -var-file=environment/terraform.tfvars
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+    post-deployment-apply:
+        runs-on:  ubuntu-latest
+        needs: 
+            - post-deployment-plan
+        steps:
+            - name: checkout repository
+              uses: actions/checkout@v4
+
+            - name: Setup Terraform
+              uses: hashicorp/setup-terraform@v3
+              with:
+                terraform_version: "1.5.7"
+
+            - name: Tree Repository
+              run: tree .
+              working-directory: ./post-deployment
+              
+            - name: Terraform Init
+              run: terraform init -backend-config=environment/backend.tfvars
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
+
+            - name: Terraform Apply
+              run: terraform apply --auto-approve -var-file=environment/terraform.tfvars
+              working-directory: ./post-deployment
+              env:
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+                AWS_REGION: "us-east-1"
