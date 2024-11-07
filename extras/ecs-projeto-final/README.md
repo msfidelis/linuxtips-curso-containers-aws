@@ -107,6 +107,12 @@ curl -X DELETE http://sales.linuxtips.demo/sales/{id}  -i
 
 
 * Variáveis de Ambiente
-| name | value |
-| -----|-------|
 
+| Name                              | Value                                                                                     |
+|-----------------------------------|-------------------------------------------------------------------------------------------|
+| `AWS_REGION`                      | Região na qual a aplicação está rodando                                                   |
+| `SQS_SALES_QUEUE`                 | URL da Queue que processa os pedidos de venda                                             |
+| `SSM_PARAMETER_STORE_STATE`       | Parameter Store que guarda o estado da aplicação. Entende os valores `ACTIVE` e `PASSIVE` |
+| `DYNAMO_SALES_TABLE`              | Nome da tabela do DynamoDB que salva as vendas                                            |
+| `DYNAMO_SALES_IDEMPOTENCY_TABLE`  | Nome da tabela do DynamoDB que controla idempotencia do processamento                     |
+| `S3_SALES_BUCKET`                 | Bucket do S3 onde serão armazenados os registros processados                              |
