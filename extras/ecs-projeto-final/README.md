@@ -45,6 +45,16 @@ Nessa arquitetura iremos utilizar
 | Exemplo de Pipeline Multi-Region no Actions     | [Link do Github](/extras/ecs-projeto-final/workflows/multiregion.yml)                               |
 
 
+# Pipelines Multi-Region
+
+As Pipelines seguem uma pseudo-piramide de testes que pode ser adaptado pra diversios tipos de cenário.
+
+As pipelines multi-região, normalmente seguem alguns padrões diferentes das mais comuns, pois alguns passos devem ser executados em um `pre-deployment`, depois um `deployment na região principal`, `deployment na região secundária` e um `post-deployment`. 
+
+Esse tipo de lógica será aplicada pois alguns recursos em cenário multi região são compartilhados e devem ser criado antes do deployment principal, e certas configurações como replicações, cross-subscribe e demais pontualidades devem ser tratados após o deployment principal. Por isso seguiremos nesse cenário. 
+
+![Screenshot 2024-11-13 at 21 08 29](https://github.com/user-attachments/assets/f2174c77-191a-44e2-83fd-46970ac7e8d7)
+
 
 # Aplicações 
 
