@@ -32,14 +32,17 @@ Nessa arquitetura iremos utilizar
 
 # Recursos das Aulas
 
-| Recurso / Aula                             | Repositório                                                                                         |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Registry de Modules                        | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules)               |
-| Modulo de Terraform da VPC                 | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules/vpc)           |
-| VPC / Networking - MultiRegion             | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-vpc)       |
-| Script de Pseudo-Pipeline Multi-Region     | [Link do Github](/extras/ecs-projeto-final/pipeline.sh)                                             |
-| Script de Destroy                          | [Link do Github](/extras/ecs-projeto-final/pipeline-destroy.sh)                                     |
-| Exemplo de Pipeline Multi-Region no Actions| [Link do Github](/extras/ecs-projeto-final/workflows/multiregion.yml)                               |
+| Recurso / Aula                                  | Repositório                                                                                         |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Registry de Modules                             | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules)               |
+| Modulo de Terraform da VPC                      | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules/vpc)           |
+| VPC / Networking - MultiRegion                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-vpc)       |
+| Modulo de Terraform do Cluster                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules/cluster)       |
+| Cluster - MultiRegion                           | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-cluster)   |
+| Routing / AWS Global Accelerator - MultiRegion  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-routing)   |
+| Script de Pseudo-Pipeline Multi-Region          | [Link do Github](/extras/ecs-projeto-final/pipeline.sh)                                             |
+| Script de Destroy                               | [Link do Github](/extras/ecs-projeto-final/pipeline-destroy.sh)                                     |
+| Exemplo de Pipeline Multi-Region no Actions     | [Link do Github](/extras/ecs-projeto-final/workflows/multiregion.yml)                               |
 
 
 
@@ -50,9 +53,9 @@ Nessa arquitetura iremos utilizar
 ### Infomações Importantes
 
 * Descrição: API REST responsável por receber os pedidos de venda de uma loja, registrar e enviar para processamento. 
-* Porta: '8080'
-* Recursos Mínimos: 256m de CPU e 512Mb de RAM
-* Healthcheck: '/healthcheck'
+* Porta: `8080`
+* Recursos Mínimos: `256m` de CPU e `512Mb` de RAM
+* Healthcheck: `/healthcheck`
 * Imagem: `fidelissauro/sales-rest-api:latest`
 
 ### Variáveis de Ambiente
@@ -100,8 +103,8 @@ curl -X DELETE http://sales.linuxtips.demo/sales/{id}  -i
 ### Infomações Importantes
 
 * Descrição: Aplicação responsável por consumir os pedidos de venda de um SQS, "processá-los" mediante a idempotencia e salvar os metadados no S3 de um "datalake" hipotético
-* Porta: '8080'
-* Recursos Mínimos: 256m de CPU e 512Mb de RAM
+* Porta: `8080`
+* Recursos Mínimos: `256m` de CPU e `512Mb` de RAM
 * Healthcheck: `/healthcheck`
 * Imagem: `fidelissauro/sales-worker:latest`
 
