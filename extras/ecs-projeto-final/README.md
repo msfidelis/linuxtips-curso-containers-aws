@@ -40,6 +40,7 @@ Nessa arquitetura iremos utilizar
 | Modulo de Terraform do Cluster                  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-modules/cluster)       |
 | Cluster - MultiRegion                           | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-cluster)   |
 | Routing / AWS Global Accelerator - MultiRegion  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-routing)   |
+| Aplicações / Workload Multi-Region + Infra      | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-multiregion-sales-workload) |
 | Script de Pseudo-Pipeline Multi-Region          | [Link do Github](/extras/ecs-projeto-final/pipeline.sh)                                             |
 | Script de Destroy                               | [Link do Github](/extras/ecs-projeto-final/pipeline-destroy.sh)                                     |
 | Exemplo de Pipeline Multi-Region no Actions     | [Link do Github](/extras/ecs-projeto-final/workflows/multiregion.yml)                               |
