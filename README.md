@@ -1,6 +1,6 @@
 # Repositório Central de Materiais do Curso de Arquitetura de Containers na AWS da LinuxTips 
 
-## Repositório das Aulas 
+## Repositório das Aulas - ECS
 
 | Recurso / Aula                | Repositório                                                                                   |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
@@ -17,7 +17,11 @@
 | API Gateway + Custom Domain    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-ecs-api-gateway) |
 | Projeto Final ECS             | [Link do Github](/extras/ecs-projeto-final/) |
 
+## Repositório das Aulas - EKS
 
+| Recurso / Aula                | Repositório                                                                                   |
+|-------------------------------|-----------------------------------------------------------------------------------------------|
+| VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-networking)  |
 
 ## Aulas ao Vivo + Abertas
 
@@ -62,6 +66,9 @@
 | OpenAPI - Swagger Editor    | [Link](https://editor-next.swagger.io/)                                                                                                                                 |
 | Set up CloudWatch logging for REST APIs in API Gateway    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html?icmpid=apigateway_console_help)                   |
 | Customize HTTP API access logs                    | [Link](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-logging-variables.html)                                              |
+| Conceitos Básicos Amazon EKS                      | [Link](https://aws.amazon.com/pt/eks/getting-started/)                                                                                            |
+| VPC CIDR blocks                                   | [Link](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html#vpc-sizing-ipv4)                                                     | 
+| EKS Best Practices                                  | [Link](https://aws.github.io/aws-eks-best-practices/)                                                     | 
 
 
 ## Github Actions Úteis para Containers na AWS
@@ -87,6 +94,8 @@
 | S3 Sync                                 | Sincronizar arquivos e diretórios com o S3                     | [S3 Sync](https://github.com/jakejarvis/s3-sync-action)                               |
 
 
+# ECS 
+
 ## VPC / Networking
 
 ### Planejamento de Ranges da VPC Otimizada para Containers 
@@ -97,9 +106,9 @@
 
 ![Planejamento](./extras/vpc-uso.png)
 
-## ECS 
+## ECS Module 
 
-### Versões do Modulo Desenvolvido em Aula
+### Versões do Modulo Desenvolvido em Aula 
 
 | Versão / Tag |  Descrição                                                                                                                                                                                                                                 |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -109,3 +118,13 @@
 | [v1.3.0/1.3.1](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.3.1)      | Roteamento Dinâmico e Service Discovery com Cloudmap
 | [v1.4.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.4.0)      | Adicionando Suporte ao Service Connect 
 | [v1.5.0](https://github.com/msfidelis/linuxtips-curso-containers-ecs-service-module/tree/v1.5.0)      | Adicionando Suporte ao Code Deploy
+
+
+# EKS 
+
+## VPC Networking
+
+
+
+
+## ECS 
