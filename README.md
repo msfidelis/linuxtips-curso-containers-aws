@@ -70,6 +70,11 @@
 | Conceitos Básicos Amazon EKS                      | [Link](https://aws.amazon.com/pt/eks/getting-started/)                                                                                            |
 | VPC CIDR blocks                                   | [Link](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html#vpc-sizing-ipv4)                                                     | 
 | EKS Best Practices                                  | [Link](https://aws.github.io/aws-eks-best-practices/)                                                     | 
+| Terraform - Kubernetes Provider                    | [Link](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)          | 
+| Terraform - Helm Provider                          | [Link](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)            |
+| Controlador de Recuperação de Aplicações da Amazon | [Link](https://aws.amazon.com/pt/application-recovery-controller/) | 
+| Zonal autoshift in ARC                            | [Link](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.html)        | 
+| Learn about Amazon Application Recovery Controller’s (ARC) Zonal Shift in Amazon EKS | [Link](https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html)  | 
 
 
 ## Github Actions Úteis para Containers na AWS
