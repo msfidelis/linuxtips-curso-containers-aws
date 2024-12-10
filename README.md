@@ -22,6 +22,7 @@
 | Recurso / Aula                | Repositório                                                                                   |
 |-------------------------------|-----------------------------------------------------------------------------------------------|
 | VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-networking)  |
+| EKS Basico                    | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla)     |
 
 ## Aulas ao Vivo + Abertas
 
