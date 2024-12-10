@@ -124,7 +124,5 @@
 
 ## VPC Networking
 
+![networking-eks](https://github.com/user-attachments/assets/41b47ef5-6ea6-4d2a-a9ce-821ab982543c)
 
-
-
-## ECS 
