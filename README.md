@@ -75,16 +75,20 @@
 | EKS Best Practices                                  | [Link](https://aws.github.io/aws-eks-best-practices/)                                                     | 
 | Terraform - Kubernetes Provider                    | [Link](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs)          | 
 | Terraform - Helm Provider                          | [Link](https://registry.terraform.io/providers/hashicorp/helm/latest/docs)            |
-| Controlador de Recuperação de Aplicações da Amazon | [Link](https://aws.amazon.com/pt/application-recovery-controller/) | 
-| Zonal autoshift in ARC                            | [Link](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.html)        | 
-| Learn about Amazon Application Recovery Controller’s (ARC) Zonal Shift in Amazon EKS | [Link](https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html)  | 
-| Amazon AWS - EC2 Graviton                                                  | [Link](https://aws.amazon.com/pt/pm/ec2-graviton/)                                                                  | 
-| Amazon AWS - EC2 Bottlerocket | [Link](https://aws.amazon.com/pt/bottlerocket/?amazon-bottlerocket-whats-new.sort-by=item.additionalFields.postDateTime&amazon-bottlerocket-whats-new.sort-order=desc)
-| Github - Bottlerocket | [Link](https://github.com/bottlerocket-os/bottlerocket)
-| Amazon EC2 - Instance Types | [Link](https://aws.amazon.com/ec2/instance-types/) |
-| EC2 Instance Comparator | [Link](https://instances.vantage.sh)
-| Amazon EKS - NodeGroups amiTypes | [Link](https://docs.aws.amazon.com/eks/latest/APIReference/API_Nodegroup.html#AmazonEKS-Type-Nodegroup-amiType) |
-| Node Termination Handler | [Link](https://github.com/aws/aws-node-termination-handler) |
+| Controlador de Recuperação de Aplicações da Amazon | [Link](https://aws.amazon.com/pt/application-recovery-controller/)                                                                                 | 
+| Zonal autoshift in ARC                              | [Link](https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.html)                                                               | 
+| Learn about Amazon Application Recovery Controller’s (ARC) Zonal Shift in Amazon EKS | [Link](https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html)                                        | 
+| Amazon AWS - EC2 Graviton                          | [Link](https://aws.amazon.com/pt/pm/ec2-graviton/)                                                                                                | 
+| Amazon AWS - EC2 Bottlerocket | [Link](https://aws.amazon.com/pt/bottlerocket/?amazon-bottlerocket-whats-new.sort-by=item.additionalFields.postDateTime&amazon-bottlerocket-whats-new.sort-order=desc) |
+| Github - Bottlerocket                              | [Link](https://github.com/bottlerocket-os/bottlerocket)                                                                                           |
+| Amazon EC2 - Instance Types                        | [Link](https://aws.amazon.com/ec2/instance-types/)                                                                                                |
+| EC2 Instance Comparator                            | [Link](https://instances.vantage.sh)                                                                                                              |
+| Amazon EKS - NodeGroups amiTypes                   | [Link](https://docs.aws.amazon.com/eks/latest/APIReference/API_Nodegroup.html#AmazonEKS-Type-Nodegroup-amiType)                                   |
+| Node Termination Handler                           | [Link](https://github.com/aws/aws-node-termination-handler)                                                                                       |
+| EC2 Instance Types AWS                             | [Link](https://aws.amazon.com/pt/ec2/instance-types/)                                                                                             |
+| Recommended Amazon Linux AMI                       | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id.html)                                                                     |
+| Recommended Bottlerocket AMI                       | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id.html)                                                                     |
+| Terraform Kubectl Provider                         | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id-bottlerocket.html)                                                        |
 
 
 
