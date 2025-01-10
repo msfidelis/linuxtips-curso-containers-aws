@@ -26,6 +26,8 @@
 | EKS - Estratégias de Node Groups  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/node_groups)   |
 | EKS - Fargate (Fargate Profiles)   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/fargate)      |
 | EKS - Cluster Full Fargate   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/fargate_full)       |
+| EKS - Karpenter               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/karpenter)       |
+| EKS - Karpenter Groupless   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/karpenter_groupless)       |
 
 ## Aulas ao Vivo + Abertas
 
