@@ -41,7 +41,7 @@
 | Aula Deep Dive Testes de Estresse | [Slide](https://docs.google.com/presentation/d/1GJGI409INJQe9J9AEKVwB0xkEhHUz-nICZkd5yoMmwI/edit?usp=sharing) / [Template de Teste](/extras/load-test/README.md) |
 | Aula Engenharia de Confiabilidade | [Slide](https://docs.google.com/presentation/d/1P6QfGq72a2oNFGvgXYO-s2PPBNnFVLYjQy0f4wyIcik/edit?usp=sharing) /  |
 | Aula Deep Dive de Patterns de Resiliência Parte 1 | [Slide](https://docs.google.com/presentation/d/14wmZUr4q0You42BZELxgzB9flX_yMvbQjz1xvhxcyOI/edit?usp=sharing) | 
-
+| Aula Review Automode | [Slide](https://docs.google.com/presentation/d/1ohnLkDaNF3fU7QArDSzG8URs75__TCiabCY2gDMQfuA/edit?usp=sharing) | 
 
 
 ## Materiais Extras 
