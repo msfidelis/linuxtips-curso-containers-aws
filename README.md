@@ -97,22 +97,14 @@
 | Recommended Amazon Linux AMI                       | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id.html)                                                                     |
 | Recommended Bottlerocket AMI                       | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id.html)                                                                     |
 | Terraform Kubectl Provider                         | [Link](https://docs.aws.amazon.com/eks/latest/userguide/retrieve-ami-id-bottlerocket.html)                                                        |
-| Predefined SSL security policies | [Link](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-policy-table.html) |
-
-| AWS Load Balancer Controller | [Link](https://kubernetes-sigs.github.io/aws-load-balancer-controller/) |
-
-| Ingress Nginx | [Link](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx) |
-
-| Kubernetes Gateway API | [Link](https://gateway-api.sigs.k8s.io/guides/) |
-
+| Predefined SSL security policies                   | [Link](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-security-policy-table.html)                                            |
+| AWS Load Balancer Controller                       | [Link](https://kubernetes-sigs.github.io/aws-load-balancer-controller/)                                                                           |
+| Ingress Nginx                                      | [Link](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx)                                                                |
+| Kubernetes Gateway API                             | [Link](https://gateway-api.sigs.k8s.io/guides/)                       |
 | Learn how EKS Pod Identity grants pods access to AWS services | [Link](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) |
-
 | Store an elastic file system with Amazon EFS  | [Link](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) |
-
 | Store Kubernetes volumes with Amazon EBS | [Link](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html) |
-
 | Learn how EKS Pod Identity grants pods access to AWS services | [Link](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) |
-
 | Workshop: EFS CSI Driver | [Link](https://www.eksworkshop.com/docs/fundamentals/storage/efs/efs-csi-driver) |
 
 
