@@ -28,6 +28,12 @@
 | EKS - Cluster Full Fargate   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/fargate_full)       |
 | EKS - Karpenter               | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/karpenter)       |
 | EKS - Karpenter Groupless   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/karpenter_groupless)       |
+| EKS - AWS Load Balancer Controller   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/alb_controller)  |
+| EKS - Nginx Controller   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/nginx_controller)       |
+| EKS - Pod Identity, EBS S3 e EFS CSI Addons   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/csi)       |
+| EKS - External Secrets com AWS Secrets Manager   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/external_secrets)       |
+| EKS - EKS Automode   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/automode)       |
+
 
 ## Aulas ao Vivo + Abertas
 
