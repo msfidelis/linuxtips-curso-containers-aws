@@ -14,6 +14,7 @@
 - [ ] Confirmar versão atual e target do upgrade (ex: 1.31 → 1.32)
 - [ ] Confirmar versões dos Addons Gerenciados para a nova versão
 
+| Addon | Namespace | Versão Atual | Versão Upgrade | Validação  |
 |coreds| kube-system | 1.15.0     | 1.32.1       | :white_check_mark:    |
 
 - [ ] Confirmar versões dos Helm Charts de Componentes de Plataforma
