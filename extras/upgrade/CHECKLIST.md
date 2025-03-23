@@ -49,7 +49,7 @@ Ferramenta: pluto
 
 ## During Upgrade 
 
-## Atualização do Cluster
+### Atualização do Cluster
 
 - [ ] Atualizar os Nodegroups
 - [ ] Atualizar a versão do control plane
@@ -58,12 +58,12 @@ Ferramenta: pluto
 - [ ] Monitorar eventos e status dos pods em tempo real
 - [ ] Validar PDBs aplicados e se há pods pendentes ou stuck
 
-## Observação Ativa
+### Observação Ativa
 - [ ] Validar readiness/liveness probes
 - [ ] Acompanhar logs, traces e métricas
 - [ ] Rodar smoke tests automatizados ou manuais
 
-## Restore das Aplicações
+### Restore das Aplicações
 
 - [ ] Restarurar as aplicações via velero (se aplicável)
 - [ ] Restarurar as aplicações via kubedump (se aplicável)
