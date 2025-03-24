@@ -15,6 +15,7 @@
 - [ ] Confirmar versões dos Addons Gerenciados para a nova versão
 
 | Addon | Namespace | Versão Atual | Versão Upgrade | Validação  |
+|-------|-----------| -------------|----------------|------------|
 |coreds| kube-system | 1.15.0     | 1.32.1       | :white_check_mark:    |
 
 - [ ] Confirmar versões dos Helm Charts de Componentes de Plataforma
@@ -31,11 +32,9 @@ Ferramenta: pluto
 * extensions/v1beta1 Ingress is deprecated in v1.14+, unavailable in v1.22+; use networking.k8s.io/v1 Ingress
 * policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+
 
-[ ] Verificar a Dispersão de Pods dos Componentes Críticos
-
-[ ] Verificar a Dispersão de Pods das Aplicações
-
-[ ] Definir janela de manutenção com stakeholders
+- [ ] Verificar a Dispersão de Pods dos Componentes Críticos
+- [ ] Verificar a Dispersão de Pods das Aplicações
+- [ ] Definir janela de manutenção com stakeholders
 
 * Data Upgrade Develop: 23/04/2025
 * Data Upgrade Homolog: 25/04/2025
