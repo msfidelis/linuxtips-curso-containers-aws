@@ -56,7 +56,7 @@
 | Cloud Native Deployment Strategies | [Slide](https://docs.google.com/presentation/d/1Rsb2QZzemSAaR1C3fbDqlErcY0fMo51GomuArQzNohc/edit?usp=sharing) |
 | Observability 101 | [Slide](https://docs.google.com/presentation/d/1Aq-5pf8w-u8xxa_dlcNEzSBj021Q38tIpMgFCN7KFoU/edit?usp=sharing) |
 | Service Mesh | [Slide](https://docs.google.com/presentation/d/1g1CERXHNogNlqSTa5HgrerjoxIAp07INuYmfUUNxHD8/edit?usp=sharing) |
-| Upgrade EKS | [Slide](https://docs.google.com/presentation/d/11xh5-j-47PIE2ph_a8c15UoJSZ6t8bEVNGNMTuorYa8/edit?usp=sharing) |
+| Upgrade EKS | [Slide](https://docs.google.com/presentation/d/11xh5-j-47PIE2ph_a8c15UoJSZ6t8bEVNGNMTuorYa8/edit?usp=sharing) / [Checklist de Upgrade](https://github.com/msfidelis/linuxtips-curso-containers-aws/blob/main/extras/upgrade/CHECKLIST.md) |
 
 
 
