@@ -33,6 +33,10 @@
 | EKS - Pod Identity, EBS S3 e EFS CSI Addons   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/csi)       |
 | EKS - External Secrets com AWS Secrets Manager   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/external_secrets)       |
 | EKS - EKS Automode   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/automode)       |
+| EKS - Prometheus  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/prometheus) |
+| EKS - Istio Service Mesh | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/istio) |
+| EKS - Keda Autoscaler | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/keda) |
+| EKS - Argo Rollous | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/argo_rollouts) |
 
 
 ## Aulas ao Vivo + Abertas
