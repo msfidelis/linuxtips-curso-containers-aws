@@ -22,7 +22,7 @@
 | Recurso / Aula                | Repositório                                                                                                           |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | VPC / Networking              | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-networking)                          |
-| EKS Basico (Vanilla)          | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla)                             |
+| EKS - Basico (Vanilla)          | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla)                             |
 | EKS - Estratégias de Node Groups  | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/node_groups)   |
 | EKS - Fargate (Fargate Profiles)   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/fargate)      |
 | EKS - Cluster Full Fargate   | [Link do Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-vanilla/tree/aula/fargate_full)       |
