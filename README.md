@@ -116,6 +116,28 @@
 | Store Kubernetes volumes with Amazon EBS | [Link](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html) |
 | Learn how EKS Pod Identity grants pods access to AWS services | [Link](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) |
 | Workshop: EFS CSI Driver | [Link](https://www.eksworkshop.com/docs/fundamentals/storage/efs/efs-csi-driver) |
+| External Secrets | [Link](https://github.com/external-secrets/external-secrets) | 
+| External Secrets | [Link](https://github.com/external-secrets/external-secrets) |
+| Workshop - External Secrets Operator | [Link](https://www.eksworkshop.com/docs/security/secrets-management/secrets-manager/external-secrets) |
+| Enable EKS Auto Mode on existing EKS clusters | [Link](https://docs.aws.amazon.com/eks/latest/userguide/migrate-auto.html) |
+| Kube Prometheus Stack | [Link](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) |
+| Grafana Dashboards | [Link](https://grafana.com/grafana/dashboards/) |
+| Prometheus Query Basics | [Link](https://prometheus.io/docs/prometheus/latest/querying/basics/) |
+| Istio Service Mesh | [Link](https://istio.io/) |
+| Istio Releases | [Link](https://github.com/istio/istio/releases) |
+| Kiali - Console for Istio Service Mesh | [Link](https://kiali.io/) |
+| Istio Helm Charts | [Link](https://github.com/istio/istio/tree/master/manifests/charts) |
+| Istio Ingress Gateway | [Link](https://github.com/istio/istio/blob/master/manifests/charts/gateways/istio-ingress/values.yaml) |
+| Keda Event Driven Autoscaling | [Link](https://keda.sh/) |
+| Keda Scalers | [Link](https://keda.sh/docs/2.16/scalers/) |
+| Keda - CPU | [Link](https://keda.sh/docs/2.16/scalers/cpu/) |
+| Keda - Cron | [Link](https://keda.sh/docs/2.16/scalers/cron/) |
+| Keda - Prometheus | [Link](https://keda.sh/docs/2.16/scalers/prometheus/) |
+| Argo Rollouts | [Link](https://argoproj.github.io/rollouts/) |
+| Argo Rollouts (docs) | [Link](https://argoproj.github.io/argo-rollouts/) |
+| Argo Rollouts (Blue Green) | [Link](https://argoproj.github.io/argo-rollouts/features/bluegreen/) |
+| Argo Rollouts (Canary) | [Link](https://argoproj.github.io/argo-rollouts/features/canary/) |
+| Argo Rollouts (AnalysisTemplate) | [Link](https://argoproj.github.io/argo-rollouts/analysis/prometheus/) |
 
 
 ## Github Actions Úteis para Containers na AWS
