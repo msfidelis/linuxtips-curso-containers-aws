@@ -11,7 +11,7 @@ Assim como o [projeto de ecs](/extras/ecs-projeto-final/), a ideia é fornecer m
 
 ## Primeira Parte - Gestão Multi-Cluster com ArgoCD 
 
-[ArgoCD](/assets/projeto-final-argocd-workload.drawio.png)
+![ArgoCD](/assets/projeto-final-argocd-workload.drawio.png)
 
 O objetivo da primeira parte é utilizar o ArgoCD como um control plane, de forma que seja possivel gerenciar o conteúdo de multiplos clusters de forma simples e segura. Na arquitetura proposta iremos ter **dois clusters de produção em modelo ativo/ativo**, um **balanceador que irá controlar a % de distribuição de trafego entre ambos** os clusters de forma customizada via terraform, um **cluster de ArgoCD que irá ter permissões para realizar deploy** de recursos em ambos os clusters de produção.
 
