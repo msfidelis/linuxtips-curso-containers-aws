@@ -18,3 +18,14 @@ O objetivo da primeira parte é utilizar o ArgoCD como um control plane, de form
 O modelo proposto deverá permitir que qualquer cluster consiga ser totalmente retirado de carga para eventuais manutenções, testes e upgrades. 
 
 
+## Segunda Parte - Cluster de Observability 
+
+![Observability](/assets/projeto-final-observability.drawio.png)
+
+* Grafana Loki: Indexação de Logs
+* Grafana Tempo: Indexação de Traces e Spans
+* Grafana Mimir: Indexação de Métricas do prometheus
+* Grafana Dashboard: Visualização de Dados, Métricas, Logs e Traces
+
+
+![Grafana](/assets/projeto-final-grafana.png)
