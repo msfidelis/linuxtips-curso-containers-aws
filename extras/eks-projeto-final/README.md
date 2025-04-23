@@ -31,6 +31,8 @@ O modelo proposto deverá permitir que qualquer cluster consiga ser totalmente r
 
 ![Observability](/assets/projeto-final-observability.drawio.png)
 
+### Componentes Principais
+
 * **Grafana Loki**: Indexação de Logs
 * **Grafana Tempo**: Indexação de Traces e Spans
 * **Grafana Mimir**: Indexação de Métricas do prometheus 
