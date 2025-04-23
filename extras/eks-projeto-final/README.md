@@ -22,10 +22,13 @@ O modelo proposto deverá permitir que qualquer cluster consiga ser totalmente r
 
 ![Observability](/assets/projeto-final-observability.drawio.png)
 
-* Grafana Loki: Indexação de Logs
-* Grafana Tempo: Indexação de Traces e Spans
-* Grafana Mimir: Indexação de Métricas do prometheus
-* Grafana Dashboard: Visualização de Dados, Métricas, Logs e Traces
+* **Grafana Loki**: Indexação de Logs
+* **Grafana Tempo**: Indexação de Traces e Spans
+* **Grafana Mimir**: Indexação de Métricas do prometheus 
+* **Grafana Dashboard**: Visualização de Dados, Métricas, Logs e Traces
+* **FluentBit**: Captura e envio de logs do Kubernetes para o Loki
+* **OpenTelemetry Collector**: Envio de Traces e Spans para o Tempo
+* **Prometheus**: Coleta de Métricas e envio para o Mimir
 
 
 ![Grafana](/assets/projeto-final-grafana.png)
