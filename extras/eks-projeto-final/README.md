@@ -42,4 +42,6 @@ O modelo proposto deverá permitir que qualquer cluster consiga ser totalmente r
 * **Prometheus**: Coleta de Métricas e envio para o Mimir
 
 
+### Read Path do Grafana - Datasources
+
 ![Grafana](/assets/projeto-final-grafana.png)
