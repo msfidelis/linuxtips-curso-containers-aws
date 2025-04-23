@@ -3,7 +3,7 @@
 
 Primeiramente, saiba que eu estou extremamente orgulhoso de você ter chego até aqui. Sei que é uma jornada árdua mediante a correria do dia a dia, mas todo esforço vai valer a pena. O mundo é de quem não para :heart: 
 
-O objetivo desse projeto é criar um ambiente distribuido de multiplos clusters de Kubernetes na AWS, onde iremos gerenciar todos os helm charts, addons e cargas de trabalho de aplicações de forma centralizada entre eles com o ArgoCD e também centralizar de forma resiliênte e inteligente o ferramental de observability que irá receber traces, logs e metricas de vários clusters e disponibizá-los para consumo. 
+O objetivo desse projeto é criar um ambiente distribuido com multiplos clusters de Kubernetes na AWS. Iremos gerenciar todos os helm charts, addons e cargas de trabalho de aplicações de forma centralizada com o ArgoCD e também disponibilizar de forma resiliente e escalável o **ferramental de observability que irá receber traces, logs e metricas de multiplas fontes e disponibizá-los para consumo** no Grafana. 
 
 Assim como o [projeto de ecs](/extras/ecs-projeto-final/), a ideia é fornecer mecanismos que nos ajudem a escalar de forma sustentável e com muita resiliência em ambientes corporativos de médio/grande porte. 
 
@@ -16,7 +16,7 @@ Assim como o [projeto de ecs](/extras/ecs-projeto-final/), a ideia é fornecer m
 | Ingress Application Load Balancer | [Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-multicluster-management/tree/main/ingress)   |
 | EKS Cluster 01 e 02               | [Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-multicluster-management/tree/main/clusters)  |
 | EKS Control Plane do ArgoCD       | [Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-multicluster-management/tree/main/clusters)  |
-
+| EKS Observability Cluster Tools   | [Github](https://github.com/msfidelis/linuxtips-curso-containers-aws-eks-observability-cluster)                       |
 
 ## Primeira Parte - Gestão Multi-Cluster com ArgoCD 
 
