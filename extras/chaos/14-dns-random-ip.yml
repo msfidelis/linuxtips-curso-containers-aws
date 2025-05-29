@@ -1,0 +1,14 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: DNSChaos
+metadata:
+  generateName: dns-chaos-
+  namespace: nutrition
+spec:
+  action: random
+  mode: all
+  patterns:
+    - water-grpc.nutrition.svc.cluster.local
+  selector:
+    namespaces:
+      - nutrition
+  duration: "30s"

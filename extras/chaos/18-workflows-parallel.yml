@@ -1,0 +1,114 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  generateName: health-api-stress-workflow-
+  namespace: nutrition
+spec:
+  entry: serial-stress
+  templates:
+    - name: serial-stress
+      templateType: Parallel
+
+      children:
+        - stress-proteins
+        - stress-water
+        - stress-api
+        - stress-recommendations
+        - stress-imc
+        - stress-bmr
+
+    - name: stress-proteins
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: proteins-grpc
+
+    - name: stress-water
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: water-grpc
+
+    - name: stress-recommendations
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: recommendations-grpc
+
+    - name: stress-imc
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: imc-grpc
+
+    - name: stress-bmr
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: bmr-grpc
+
+    - name: stress-api
+      templateType: StressChaos
+      deadline: 30s
+      stressChaos:
+        mode: all
+        stressors:
+          cpu:
+            workers: 4
+            load: 80
+          memory:
+            workers: 4
+            size: '512MB'
+        selector:
+          labelSelectors:
+            app: health-api

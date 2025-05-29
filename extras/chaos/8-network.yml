@@ -1,0 +1,18 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  generateName: nutrition-network-delay-
+  namespace: nutrition
+spec:
+  action: delay
+  mode: one
+  selector:
+    namespaces:
+      - nutrition
+    labelSelectors:
+      'app': 'health-api'
+  delay:
+    latency: '100ms'
+    correlation: '100'
+    jitter: '100ms'
+  duration: "30s"

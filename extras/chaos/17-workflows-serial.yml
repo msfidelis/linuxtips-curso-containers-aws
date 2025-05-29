@@ -1,0 +1,48 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  generateName: health-api-failure-workflow-
+  namespace: nutrition
+spec:
+  entry: serial-failure
+  templates:
+    - name: serial-failure
+      templateType: Serial
+
+      children:
+        - failure-proteins
+        - failure-water
+        - failure-api
+
+    - name: failure-proteins
+      templateType: PodChaos
+      deadline: 30s
+      podChaos:
+        action: pod-failure
+        mode: fixed-percent
+        value: "50"
+        selector:
+          labelSelectors:
+            app: proteins-grpc
+
+    - name: failure-water
+      templateType: PodChaos
+      deadline: 30s
+      podChaos:
+        action: pod-failure
+        mode: fixed-percent
+        value: "50"
+        selector:
+          labelSelectors:
+            app: water-grpc
+
+    - name: failure-api
+      templateType: PodChaos
+      deadline: 30s
+      podChaos:
+        action: pod-failure
+        mode: fixed-percent
+        value: "50"
+        selector:
+          labelSelectors:
+            app: health-api

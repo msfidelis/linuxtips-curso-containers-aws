@@ -1,0 +1,12 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  generateName: failure-health-api-
+  namespace: nutrition
+spec:
+  action: pod-failure
+  mode: one
+  selector:
+    labelSelectors:
+      app: health-api
+  duration: "60s"

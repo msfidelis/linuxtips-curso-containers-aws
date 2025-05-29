@@ -1,0 +1,23 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  generateName: proteins-partition-
+  namespace: nutrition
+spec:
+  action: partition
+  mode: fixed-percent
+  value: "50"
+  selector:
+    namespaces:
+      - nutrition
+    labelSelectors:
+      'app': 'recommendations-grpc'
+  direction: to
+  target:
+    mode: all
+    selector:
+      namespaces:
+        - nutrition
+      labelSelectors:
+        'app': 'proteins-grpc'
+  duration: "30s"

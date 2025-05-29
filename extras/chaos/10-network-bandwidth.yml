@@ -1,0 +1,19 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  generateName: proteins-bandwidth-
+  namespace: nutrition
+spec:
+  action: bandwidth
+  mode: fixed-percent
+  value: "50"
+  selector:
+    namespaces:
+      - nutrition
+    labelSelectors:
+      'app': 'recommendations-grpc'
+  bandwidth:
+    rate: '1mbps'
+    limit: 20971520
+    buffer: 10000
+  duration: "30s"

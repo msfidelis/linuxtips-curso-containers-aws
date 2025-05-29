@@ -1,0 +1,19 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Schedule
+metadata:
+  name: kill-recommendations-grpc-schedule
+  namespace: chaos-mesh
+spec:
+  schedule: '* * * * *'
+  historyLimit: 20
+  concurrencyPolicy: 'Allow'
+  type: PodChaos
+  podChaos:
+    action: pod-kill
+    mode: one
+    selector:
+      labelSelectors:
+        app: recommendations-grpc
+      namespaces:
+        - nutrition
+    duration: "30s"

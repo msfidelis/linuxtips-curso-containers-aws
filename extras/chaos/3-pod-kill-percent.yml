@@ -1,0 +1,13 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  generateName: kill-all-recommendations-grpc-
+  namespace: nutrition
+spec:
+  action: pod-kill
+  mode: fixed-percent
+  value: "50"
+  selector:
+    labelSelectors:
+      app: recommendations-grpc
+  duration: "30s"

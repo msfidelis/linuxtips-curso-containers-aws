@@ -1,0 +1,13 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  generateName: failure-percent-health-api-
+  namespace: nutrition
+spec:
+  action: pod-failure
+  mode: fixed-percent
+  value: "50"
+  selector:
+    labelSelectors:
+      app: health-api
+  duration: "60s"

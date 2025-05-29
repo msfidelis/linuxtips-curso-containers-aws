@@ -1,0 +1,19 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: HTTPChaos
+metadata:
+  generateName: health-api-calculator-abort-
+  namespace: nutrition
+spec:
+  mode: fixed-percent
+  value: "50"
+  selector:
+    labelSelectors:
+      app: health-api
+    namespaces:
+      - nutrition
+  target: Request
+  port: 8080
+  method: POST
+  path: /calculator
+  abort: true
+  duration: 30s

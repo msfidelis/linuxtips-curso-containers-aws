@@ -1,0 +1,17 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  generateName: imc-stress-memory-
+  namespace: nutrition
+spec:
+  mode: all
+  selector:
+    labelSelectors:
+      'app': 'imc-grpc'
+    namespaces:
+      - nutrition
+  stressors:
+    memory:
+      workers: 4
+      size: '256MB'
+  duration: "2m"

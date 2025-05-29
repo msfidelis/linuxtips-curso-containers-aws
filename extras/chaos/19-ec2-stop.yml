@@ -1,0 +1,9 @@
+apiVersion: chaos-mesh.org/v1alpha1
+kind: AWSChaos
+metadata:
+  name: ec2-restart
+  namespace: chaos-mesh
+spec:
+  action: ec2-restart
+  awsRegion: 'us-east-1'
+  ec2Instance: 'i-0c0189386a63f7602'
