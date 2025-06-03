@@ -60,7 +60,7 @@
 | Observability 101 | [Slide](https://docs.google.com/presentation/d/1Aq-5pf8w-u8xxa_dlcNEzSBj021Q38tIpMgFCN7KFoU/edit?usp=sharing) |
 | Service Mesh | [Slide](https://docs.google.com/presentation/d/1g1CERXHNogNlqSTa5HgrerjoxIAp07INuYmfUUNxHD8/edit?usp=sharing) |
 | Upgrade EKS | [Slide](https://docs.google.com/presentation/d/11xh5-j-47PIE2ph_a8c15UoJSZ6t8bEVNGNMTuorYa8/edit?usp=sharing) / [Checklist de Upgrade](https://github.com/msfidelis/linuxtips-curso-containers-aws/blob/main/extras/upgrade/CHECKLIST.md) |
-
+| Estatística para Confiabilidade | [Slide](https://docs.google.com/presentation/d/1FALSPj8kgGqxKJhpYeDFEv71ml8-c6nqVfkP_dIlEDU/edit?usp=sharing)  |
 
 
 ## Materiais Extras 
