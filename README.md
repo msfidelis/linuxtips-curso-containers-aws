@@ -141,6 +141,7 @@
 | Argo Rollouts (Blue Green) | [Link](https://argoproj.github.io/argo-rollouts/features/bluegreen/) |
 | Argo Rollouts (Canary) | [Link](https://argoproj.github.io/argo-rollouts/features/canary/) |
 | Argo Rollouts (AnalysisTemplate) | [Link](https://argoproj.github.io/argo-rollouts/analysis/prometheus/) |
+| Workshops VPC | [Link](https://workshops.aws/categories/VPC) |
 
 
 ## Github Actions Úteis para Containers na AWS
